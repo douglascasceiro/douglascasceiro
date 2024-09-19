@@ -1,0 +1,91 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* ================================ VARIAVEIS CORES ================================================================== */
+:root {
+    --COR-TEXTO-HEADER: #fff;
+    --COR-FUNDO-HEADER: #5fb962;
+}
+
+/* ================================ HEADER - NAVBAR =================================================================== */
+header {
+    background: #5fb962;
+    height: 85px;
+    padding: 0 40px;
+}
+header .logo {
+    width: 120px;
+    height: 66px;
+    margin-right: 20px;
+}
+
+header .logo img {
+    width: 100%;
+    height: auto;
+}
+
+header nav {
+    height: 85px;
+    width: 100%;
+}
+
+header nav .nav-link {
+    color: #FFF;
+    font-weight: bold;
+}
+
+.navbar-dark .navbar-nav .nav-item .nav-link {
+    padding-top: 2px !important;
+    padding-bottom: 2px !important;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    opacity: 0.85;
+}
+
+.navbar-dark .navbar-nav .nav-link:focus, 
+.navbar-dark .navbar-nav .nav-link:hover {
+    opacity: 0.95 !important;
+    text-shadow: 0px 1px 6px rgba(255, 255, 255, 0.6);
+}
+
+.navbar-dark .navbar-nav .nav-item.active .nav-link {
+    opacity: 1 !important;
+    border-bottom: 1px solid rgba(255,255,255,.7);
+}
+
+
+@media (max-width: 991px) {
+    header .navbar-collapse {
+        background-color: #FFF !important;
+    }
+
+    header nav .nav-link {
+        color: #5fb962 !important;
+    }
+}
+
+
+
+
+
+/* ================================ CONTEUDO =================================================================== */
+
+.first-component {
+    background: #5fb962;
+    color: white;
+    text-align: center;
+    height: 981px;
+}
+
+
+
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
