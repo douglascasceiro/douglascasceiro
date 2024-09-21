@@ -1,13 +1,29 @@
-document.addEventListener('scroll', function() {
-    const products = document.querySelectorAll('.product');
-    const triggerPoint = window.innerHeight * 0.75;
 
-    products.forEach(product => {
-        const productTop = product.getBoundingClientRect().top;
-
-        if (productTop < triggerPoint) {
-            product.style.opacity = 1;
-            product.style.transform = 'translateX(0)';
-        }
+function doAnimations() {
+console.log('on scroll');
+  
+    // Calc current offset and get all animatables
+    var offset = $(window).scrollTop() + $(window).height(),
+        $animatables = $('.animatable');
+    
+    // Unbind scroll handler if we have no animatables
+    if ($animatables.length == 0) {
+      $(window).off('scroll', doAnimations);
+    }
+    
+    // Check all animatables and animate them if necessary
+    $animatables.each(function(i) {
+       var $animatable = $(this);
+      if (($animatable.offset().top + $animatable.height() - 20) < offset) {
+        $animatable.removeClass('animatable').addClass('animated');
+      }
     });
-});
+  
+};
+
+function iniciarAnimacao() {
+    console.log('iniciar animacao');
+    // Hook doAnimations on scroll, and trigger a scroll
+    $(window).on('scroll', doAnimations);
+    $(window).trigger('scroll');
+}
