@@ -21,8 +21,7 @@ console.log('on scroll');
   
 };
 
-function iniciarAnimacao() {
-    console.log('iniciar animacao');
+function carregarAnimacao() {
     // Hook doAnimations on scroll, and trigger a scroll
     $(window).on('scroll', doAnimations);
     $(window).trigger('scroll');

@@ -1,0 +1,127 @@
+
+/* ================================ VARIAVEIS CORES ================================================================== */
+:root {
+  --BORDA-PRODUTO-BACK: #367c39;
+  --TAMANHO-BOX-XS: 440px;
+  --TAMANHO-BOX-SM: 310px;
+  --TAMANHO-BOX-MD: 270px;
+  --TAMANHO-BOX-LG: 340px;
+  --TAMANHO-BOX-XL: 350px;
+  --TAMANHO-MAX-BOX-XL: 350px;
+}
+
+
+/* ================================ ESTILOS ======================================================================= */
+
+#produtos {
+  padding: 50px;
+}
+
+.col-produto {
+  padding: 10px !important;
+}
+
+.col-produto .card {
+  background-color: transparent;
+  border: 0 !important;
+}
+
+.col-produto:hover img {
+  border-radius: 3px;
+  -webkit-box-shadow: 0px 0px 8px 1px #aaaaaa;
+  -moz-box-shadow: 0px 0px 8px 1px #aaaaaa;
+  box-shadow: 0px 0px 8px 1px #aaaaaa;
+}
+
+.back-produto, 
+.front-produto {
+  background-color: transparent;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.front-produto .img-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.front-produto .img-card img {
+  width: 100%;
+  height: auto;
+}
+
+.back-produto .texto-card {
+  border: 1px solid var(--BORDA-PRODUTO-BACK);
+  border-radius: 4px;
+}
+
+.back-produto .resumo {
+  width: 100%;
+  padding: 20px;
+}
+
+.back-produto .ver-mais {
+  bottom: 0;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  padding: 15px 10px 25px 10px;
+}
+
+
+/* ================================ RESPONSIVOS =================================================================== */
+/* XS */
+@media (max-width: 575px) {
+  .size-card {
+    height: var(--TAMANHO-BOX-XS) !important;
+    max-height: var(--TAMANHO-BOX-XS) !important;
+  }
+}
+/* SM */
+@media (min-width: 576px) and (max-width: 767px) {
+  .size-card {
+    height: var(--TAMANHO-BOX-SM) !important;
+    max-height: var(--TAMANHO-BOX-SM) !important;
+  }
+}
+/* MD */
+@media (min-width: 768px) and (max-width: 991px) {
+  .size-card {
+    height: var(--TAMANHO-BOX-MD) !important;
+    max-height: var(--TAMANHO-BOX-MD) !important;
+  }
+}
+/* LG */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .size-card {
+    height: var(--TAMANHO-BOX-LG) !important;
+    max-height: var(--TAMANHO-BOX-LG) !important;
+  }
+}
+/* XL */
+@media (min-width: 1200px) {
+  .size-card {
+    height: var(--TAMANHO-BOX-XL) !important;
+    max-height: var(--TAMANHO-BOX-XL) !important;
+    max-width: var(--TAMANHO-MAX-BOX-XL) !important;
+  }
+  .size-card.img-card img {
+    max-width: var(--TAMANHO-MAX-BOX-XL) !important;
+    max-height: var(--TAMANHO-MAX-BOX-XL) !important;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+/* ================================ ANIMAÇÕES =================================================================== */
+

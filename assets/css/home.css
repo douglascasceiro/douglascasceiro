@@ -1,0 +1,294 @@
+
+/* ================================ VARIAVEIS CORES ================================================================== */
+:root {
+  /* ------- VARS CONTEUDO --------------------- */
+  --BOX-WR-TEXTO: #df352b;
+  --BOX-WR-FUNDO: #ffffff;
+  --BOX-WR-TEXTO-BTN: #ffffff;
+  --BOX-WR-FUNDO-BTN: #df352b;
+
+  --BOX-WG-TEXTO: #5fb962;
+  --BOX-WG-FUNDO: #ffffff;
+  --BOX-WG-TEXTO-BTN: #ffffff;
+  --BOX-WG-FUNDO-BTN: #5fb962;
+  
+  --BOX-GRN-TEXTO: #ffffff;
+  --BOX-GRN-FUNDO: #5fb962;
+  --BOX-GRN-TEXTO-BTN: #5fb962;
+  --BOX-GRN-FUNDO-BTN: #ffffff;
+  
+  --BOX-RED-TEXTO: #ffffff;
+  --BOX-RED-FUNDO: #df352b;
+  --BOX-RED-TEXTO-BTN: #df352b;
+  --BOX-RED-FUNDO-BTN: #ffffff;
+}
+
+
+/* ================================ CONTEUDO =================================================================== */
+
+.componente-inicial {
+  background: var(--BOX-WR-FUNDO);
+  color: var(--BOX-WR-TEXTO);
+  height: 1000px;
+}
+
+.componente-inicial .logo {
+  align-content: space-between;
+}
+
+.componente-inicial .logo img {
+  width: 100%;
+  height: auto;
+}
+
+.componente-inicial .primeira-imagem img {
+  width: 100%;
+  height: auto;
+}
+
+.componente-inicial .btn-padrao {
+  width: 100%;
+  margin-top: 10px;
+  background-color: var(--BOX-WR-FUNDO-BTN) !important;
+  color: var(--BOX-WR-TEXTO-BTN) !important;
+}
+
+.btn-padrao {
+  font-size: 1.3rem;
+  font-weight: bold;
+  word-wrap: break-word;
+  white-space: normal;
+  height: auto;
+  opacity: 0.8;
+}
+
+.btn-padrao:hover {
+  opacity: 0.9 !important;
+}
+.btn-padrao span,
+.btn-padrao:active {
+  opacity: 1 !important;
+}
+
+
+
+.produto {
+  min-height: 450px;
+  display: flex;
+  align-items: center;
+}
+
+.produto .row {
+  align-items: center;
+}
+
+.produto .titulo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  padding-bottom: 30px;
+}
+
+.produto .imagem img {
+  width: 100%;
+  height: auto;
+}
+
+.produto .texto {
+  font-size: 1.4rem;
+}
+
+.produto .botao {
+  padding-top: 15px;
+  padding-bottom: 20px;
+}
+
+
+.primeiro-produto {
+  background: var(--BOX-GRN-FUNDO);
+  color: var(--BOX-GRN-TEXTO);
+}
+.primeiro-produto .btn-padrao {
+  background: var(--BOX-GRN-FUNDO-BTN) !important;
+  color: var(--BOX-GRN-TEXTO-BTN) !important;
+}
+
+.segundo-produto {
+  background: var(--BOX-WG-FUNDO);
+  color: var(--BOX-WG-TEXTO);
+}
+.segundo-produto .btn-padrao {
+  background: var(--BOX-WG-FUNDO-BTN) !important;
+  color: var(--BOX-WG-TEXTO-BTN) !important;
+}
+
+.terceiro-produto {
+  background: var(--BOX-RED-FUNDO);
+  color: var(--BOX-RED-TEXTO);
+}
+.terceiro-produto .btn-padrao {
+  background: var(--BOX-RED-FUNDO-BTN) !important;
+  color: var(--BOX-RED-TEXTO-BTN) !important;
+}
+
+.quarto-produto {
+  background: var(--BOX-WR-FUNDO);
+  color: var(--BOX-WR-TEXTO);
+}
+.quarto-produto .btn-padrao {
+  background: var(--BOX-WR-FUNDO-BTN) !important;
+  color: var(--BOX-WR-TEXTO-BTN) !important;
+}
+
+.quinto-produto {
+  background: var(--BOX-GRN-FUNDO);
+  color: var(--BOX-GRN-TEXTO);
+}
+.quinto-produto .btn-padrao {
+  background: var(--BOX-GRN-FUNDO-BTN) !important;
+  color: var(--BOX-GRN-TEXTO-BTN) !important;
+}
+
+.sexto-produto {
+  background: var(--BOX-WG-FUNDO);
+  color: var(--BOX-WG-TEXTO);
+}
+.sexto-produto .btn-padrao {
+  background: var(--BOX-WG-FUNDO-BTN) !important;
+  color: var(--BOX-WG-TEXTO-BTN) !important;
+}
+
+
+
+
+
+/* ================================ RESPONSIVOS =================================================================== */
+/* SM / XS */
+@media (max-width: 767px) {
+  .componente-inicial {
+    padding: 10px 20px;
+  }
+  .produto {
+    padding: 10px 20px;
+  }
+}
+/* MD */
+@media (min-width: 768px) and (max-width: 991px) {
+  .componente-inicial {
+    padding: 30px 50px;
+  }
+  .produto {
+    padding: 20px 40px;
+  }
+}
+/* LG */
+@media (min-width: 992px) {
+  .componente-inicial {
+    padding: 60px 100px;
+  }
+  .produto {
+    padding: 40px 80px;
+  }
+}
+/* SM pra cima */
+@media (min-width: 576px) {
+
+  .componente-inicial .logo {
+    padding-right: 16px;
+  }
+
+  .componente-inicial .primeira-imagem {
+    padding-left: 80px;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/* ================================ ANIMAÇÕES =================================================================== */
+.animatable {
+  visibility: hidden;
+  animation-play-state: paused;
+}
+  
+.animated {
+  visibility: visible;
+  animation-fill-mode: both;
+  animation-duration: 1s;
+  animation-play-state: running;
+}
+.animated.animationDelay {
+  animation-delay: 0.4s;
+}
+.animated.animationDelayMed {
+  animation-delay: 1.2s;
+}
+.animated.animationDelayLong {
+  animation-delay: 1.6s;
+}
+.animated.fadeBgColor {
+  animation-name: fadeBgColor;
+}
+.animated.bounceIn {
+  animation-name: bounceIn;
+}
+.animated.bounceInRight {
+  animation-name: bounceInRight;
+}
+.animated.bounceInLeft {
+  animation-name: bounceInLeft;
+}
+.animated.fadeIn {
+  animation-name: fadeIn;
+}
+.animated.fadeInDown {
+  animation-name: fadeInDown;
+}
+.animated.fadeInUp {
+  animation-name: fadeInUp;
+}
+.animated.moveUp {
+  animation-name: moveUp;
+}
+
+
+@keyframes bounceInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-2000px);
+  }
+  60% {
+    transform: translateX(20px);
+  }
+  80% {
+    transform: translateX(-5px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes bounceInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(2000px);
+  }
+  60% {
+    transform: translateX(-20px);
+  }
+  80% {
+    transform: translateX(5px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
