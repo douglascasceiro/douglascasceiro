@@ -10,7 +10,7 @@ function carregarProdutos() {
 
         $(`#produtoCard_${indexArr}`).flip({
             axis: 'y',
-            trigger: 'click'
+            trigger: 'hover'
         });
 
         $(`#produtoCard_${indexArr} .img-card img`).on('load', function() {
