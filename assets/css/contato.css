@@ -1,0 +1,85 @@
+
+/* ================================ VARIAVEIS CORES ================================================================== */
+:root {
+  --TITULO: #3e8e41;
+  --TEXTO: #2f6a31;
+}
+
+
+/* ================================ ESTILOS ======================================================================= */
+
+.contatos {
+  padding: 50px 30px;
+  min-height: 900px;
+}
+
+.contatos .titulo {
+  color: var(--TITULO);
+  padding: 30px 0;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.contatos .texto {
+  color: var(--TEXTO);
+  padding: 10px 0;
+  font-size: 1.3rem;
+  text-align: center;
+}
+
+.contatos .descricao {
+  color: var(--TEXTO);
+  padding: 50px 30px 20px 30px;
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+.contatos .endereco-google {
+  text-align: center;
+}
+
+
+footer {
+  min-height: auto !important;
+}
+footer .direitos {
+  padding: 30px 0 30px 0 !important;
+}
+
+
+
+/* ================================ RESPONSIVOS =================================================================== */
+/* XS */
+@media (max-width: 575px) {
+
+}
+/* SM */
+@media (min-width: 576px) and (max-width: 767px) {
+  
+}
+/* MD */
+@media (min-width: 768px) and (max-width: 991px) {
+  
+}
+/* LG */
+@media (min-width: 992px) and (max-width: 1199px) {
+  
+}
+/* XL */
+@media (min-width: 1200px) {
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+/* ================================ ANIMAÇÕES =================================================================== */
+
